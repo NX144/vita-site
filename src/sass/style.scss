@@ -14,6 +14,9 @@
 }
 
 
-@import url("./fonts/options.scss");
 
-@import url("./blocks/_footer.scss");
+@import "./fonts/options.scss";
+@import "./blocks/header.scss";
+@import "./blocks/_footer.scss";
+
+
