@@ -124,4 +124,22 @@
             
         }
     }
+    &__all {
+        margin: 0 auto;
+        background-color: #306cf2;
+        margin-top: 20px;
+        width: 120px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        border: 1px solid #fff;
+        transition: all .1s ease-in-out;
+        &:hover {
+            border-color: #306CF2;
+        }
+    }
 }
