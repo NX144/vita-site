@@ -1,0 +1,36 @@
+.cards {
+    padding: 24px 0;
+    &__list {
+        display: grid;
+        list-style-type: none;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(352px, 1fr));
+        &_item {
+            border-radius: 8px;
+            position: relative;
+            border: 2px solid #fff;
+            transition: all .5s ease-in-out;
+            background-color: #306cf2;
+            &:hover {
+                border-color: #306cf2;
+            }
+            img {
+                border-radius: 5px 5px 0 0;
+                width: 100%;
+                object-fit: cover;
+            }
+            span {
+                padding: 2.5rem 1.5rem;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                color: #fff;
+                font-size: 18px;
+                border-radius: 0 0 5px 5px;
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}

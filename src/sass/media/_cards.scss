@@ -1,0 +1,5 @@
+@media(max-width: 480px) {
+    .cards__list {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,3 +1,5 @@
+
+@import "./fonts/options";
 * {
     padding: 0;
     margin: 0;
@@ -13,8 +15,37 @@
     margin: 0 auto;
 }
 
+h2 {
+    text-align: center;
+    color: #081723;
+    font-weight: 700;
+    font-size: 40px;
+}
 
-@import "./fonts/options";
+
+
+
+
 @import "./blocks/header";
+@import "./blocks/cards";
+@import "./blocks/sellers";
+@import "./blocks/footer";
 
 
+@import "./media/cards";
+@import "./media/footer";
+
+@media(max-width: 1200px) {
+    .container {
+        width: 92%;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .sellers {
+        padding: 40px 0;
+    }
+    .sellers__list {
+        margin-top: 40px;
+    }
+}
