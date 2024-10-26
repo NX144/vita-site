@@ -1,0 +1,191 @@
+.prod {
+    padding: 36px 0 12px;
+    &__wrap {
+        display: grid;
+        padding: 0 50px;
+        grid-template-columns: 605px 1fr;
+    }
+    &__img {
+        display: flex;
+        justify-content: center;
+        height: auto;
+        img {
+            height: 605px;
+            object-fit: cover;
+        }
+    }
+    .swiper {
+        height: 97px;
+    }
+    .swiper-slide {
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        &:hover {
+            opacity: .7;
+        }
+        &.active {
+            border-color: #306cf2;
+        }
+        img {
+            height: 100%;
+            width: auto;
+            border-radius: 3px;
+        }
+    }
+    .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after, .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+        font-size: 10px;
+    }
+    &__slider {
+        padding: 0 40px;
+        margin-top: 20px;
+        position: relative;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        right: 10px;
+        color: #081723BF;
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: 10px;
+        color: #081723BF;
+    }
+
+    &__right {
+        padding-left: 50px;
+        h2 {
+            text-align: start;
+        }
+        &_rate {
+            justify-content: start;
+            margin-top: 15px;
+        }
+        &_delivery {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            padding: 10px;
+            font-family: "Assistant", sans-serif;
+            color: #000;
+            font-size: 16px;
+            font-weight: 700;
+            img {
+                height: 20px;
+                width: 20px;
+                object-fit: cover;
+                margin-right: 10px;
+            }
+        }
+        &_price {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            &-old {
+                font-size: 16px;
+                text-decoration: line-through;
+                color: #081723BF;
+                font-weight: 600;
+            }
+            &-new {
+                color: #081723;
+                font-size: 18px;
+                font-weight: 600;
+            }
+            &-sale {
+                font-weight: 600;
+                font-size: 12px;
+                color: #fff;
+                padding: 5px 13px;
+                background-color: #306cf2;
+                border-radius: 40px;
+            }
+            * {                
+                font-family: "Assistant", sans-serif;
+            }
+        }
+        &_now {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 25px 0 10px;
+            background-color: green;
+            color: #fff;
+            font-family: "Assistant", sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            height: 47px;
+            border: 1px solid #000;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                left: -2px;
+                top: -2px;
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+                border: 2px solid transparent;
+                z-index: -1;
+                transition: all .3s ease-in-out;
+            }
+            &:hover {
+                &::after {
+                    border-color: #000;
+                }
+            }
+        }
+        &_cart {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 0 0 10px;
+            background-color: #000;
+            color: #fff;
+            font-family: "Assistant", sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            height: 47px;
+            border: 1px solid #000;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                left: -2px;
+                top: -2px;
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+                border: 2px solid transparent;
+                z-index: -1;
+                transition: all .3s ease-in-out;
+            }
+            &:hover {
+                &::after {
+                    border-color: #000;
+                }
+            }
+        }
+        &_payment {
+            margin: 15px 0;
+            img {
+                width: 100%;
+            }
+        }
+        &_descr {
+            margin-top: 80px;
+            font-family: "Assistant", sans-serif;
+            color: #081723BF;
+            font-size: 16px;
+            font-weight: 600;
+            strong {
+                font-weight: 700;
+            }
+        }
+    }
+}
