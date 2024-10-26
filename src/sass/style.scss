@@ -45,14 +45,16 @@ h2 {
 }
 
 
-@import "./blocks/header";
-@import "./blocks/cards";
-@import "./blocks/sellers";
-@import "./blocks/footer";
+@import "./blocks/_header";
+@import "./blocks/_cards";
+@import "./blocks/_sellers";
+@import "./blocks/_experience";
+@import "./blocks/_footer";
+@import "./blocks/_feedbacks.scss";
 
-
-@import "./media/cards";
-@import "./media/footer";
+@import "./media/_cards";
+@import "./media/_footer";
+@import "./media/_experience.scss";
 
 @media(max-width: 1200px) {
     .container {
