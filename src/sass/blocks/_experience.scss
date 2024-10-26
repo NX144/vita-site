@@ -1,0 +1,41 @@
+.experience {
+    position: relative;
+    margin-bottom: 65px;
+    &__list {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 5rem;
+        padding-top: 36px;
+        padding-bottom: 15px;
+        &_item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__info {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-top: 1.8rem;
+        padding-bottom: 1.8rem;
+        text-align: center;
+        h3 {
+            font-family: "Assistant", sans-serif;
+            font-weight: 700;
+        }
+    }
+    &__icon {
+        width: 119px;
+        height: 119px;
+        img {
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+}

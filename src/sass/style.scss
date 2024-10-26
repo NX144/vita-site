@@ -49,10 +49,12 @@ h2:not(.left__title) {
 @import "./blocks/sellers";
 @import "./blocks/prod";
 @import "./blocks/footer";
-
+@import "./blocks/experience";
+@import "./blocks/feedbacks";
 
 @import "./media/cards";
 @import "./media/footer";
+@import "./media/experience";
 
 @media(max-width: 1200px) {
     .container {

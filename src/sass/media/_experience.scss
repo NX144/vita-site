@@ -1,0 +1,8 @@
+@media(max-width: 769px) {
+    .experience {
+        margin-bottom: 40px;
+        &__list {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+    }
+}
