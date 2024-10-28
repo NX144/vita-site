@@ -51,16 +51,21 @@ h2:not(.left__title) {
 @import "./blocks/footer";
 @import "./blocks/experience";
 @import "./blocks/feedbacks";
+@import "./blocks/modal";
+@import "./blocks/cart";
 
 @import "./media/cards";
 @import "./media/footer";
 @import "./media/experience";
+@import "./media/prod";
+@import "./media/modal";
+@import "./media/feedbacks";
 
 @media(max-width: 1200px) {
     .container {
         width: 92%;
     }
-    h2 {
+    h2:not(.left__title) {
         font-size: 30px;
     }
     .sellers {
@@ -68,5 +73,13 @@ h2:not(.left__title) {
     }
     .sellers__list {
         margin-top: 40px;
+    }
+    .feedbacks__reviews {
+        top: 44%;
+    }
+}
+@media(max-width: 991px) {
+    .feedbacks__reviews {
+
     }
 }

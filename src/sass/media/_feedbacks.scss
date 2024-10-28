@@ -1,0 +1,22 @@
+@media(max-width: 1200px) {
+    .feedbacks {
+        &__descr {
+            line-height: 25px;
+            padding: 1.5rem;
+        }
+    }
+}
+@media(max-width: 991px) {
+    .feedbacks {
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+@media(max-width: 768px) {
+    .feedbacks {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+    }
+}

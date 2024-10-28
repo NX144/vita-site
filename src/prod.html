@@ -247,7 +247,7 @@
                     <ul class="center__list">
                         <li class="list__item">
                             <div class="item__img item__img-1"><img loading="lazy" alt="foto"
-                                    class="img__pic img__pic-1" src="images/block4__img1.webp">
+                                    class="img__pic img__pic-1" src="img/block4__img1.webp">
                             </div>
                             <div class="item__text wow fadeInDown">
                                 <p class="text__title">Reduction of blood sugar levels</p>
@@ -257,7 +257,7 @@
                         </li>
                         <li class="list__item">
                             <div class="item__img item__img-second item__img-2"><img loading="lazy" alt="foto"
-                                    class="img__pic img__pic-2" src="images/block4__img2.webp">
+                                    class="img__pic img__pic-2" src="img/block4__img2.webp">
                             </div>
                             <div class="item__text wow fadeInDown">
                                 <p class="text__title">Weight and metabolism normalization</p>
@@ -266,7 +266,7 @@
                         </li>
                         <li class="list__item">
                             <div class="item__img item__img-3"><img loading="lazy" alt="foto"
-                                    class="img__pic img__pic-3" src="images/block4__img3.webp">
+                                    class="img__pic img__pic-3" src="img/block4__img3.webp">
                             </div>
                             <div class="item__text wow fadeInDown">
                                 <p class="text__title">Recuperation of internal organs</p>
@@ -297,7 +297,7 @@
                                 href="#"><span
                                     class="btn__text-1">Claim With<br>80% Discount</span></a></button>
                     </div>
-                    <div class="form__security"><img alt="security" class="security__img" src="images/security.svg"
+                    <div class="form__security"><img alt="security" class="security__img" src="img/security.svg"
                             loading="lazy">
                         <span class="security__text">Your data is protected!</span>
                     </div>
@@ -804,13 +804,31 @@
     <script src="./js/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper(".swiper", {
-            slidesPerView: 5,
-            slidesPerGroup: 5,
             spaceBetween: 10,
+            slidesPerView: 2,
+            slidesPerGroup: 2,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+            breakpoints: {
+                480: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                },
+                768: {
+                    slidesPerView: 5,
+                    slidesPerGroup: 5,
+                },
+                991: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                },
+                1200: {
+                    slidesPerView: 5,
+                    slidesPerGroup: 5,
+                }
+            }
         })
     </script>
 </body>

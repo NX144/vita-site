@@ -1,0 +1,30 @@
+@media(max-width: 1200px) {
+    .prod {
+        &__wrap {
+            grid-template-columns: 440px 1fr;
+        }
+        &__img {
+            img {
+                height: 440px;
+            }
+        }
+    }
+}
+@media(max-width: 991px) {
+    .prod {
+        &__wrap {
+            padding: 0;
+            gap: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        &__img {
+            img {
+                height: 300px;
+            }
+        }
+        &__right {
+            padding-left: 0;
+        }
+    }
+}

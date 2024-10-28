@@ -1,0 +1,157 @@
+.cart {
+    &__wrap {
+        padding: 36px 50px;
+    }
+    &__head {
+        padding: 50px 0 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h2 {
+            text-align: left;
+        }
+        a {
+            color: #081723;
+            font-size: 16px;
+            font-family: "Assistant", sans-serif;
+            font-weight: 600;
+        }
+    }
+    &__body {
+        table {
+            border-bottom: 1px solid rgba(8, 23, 35, .08);
+            width: 100%;
+            thead {
+                tr th {
+                    text-transform: uppercase;
+                    font-size: 10px;
+                    padding: 0 0 18px;
+                    color: #081723BF;
+                    border-bottom: 1px solid rgba(8, 23, 35, .08);
+                    font-weight: 400;
+                    letter-spacing: 1.3px;
+                    font-family: "Assistant", sans-serif;
+                    text-align: left;
+                    &:last-of-type {
+                        text-align: right;
+                    }
+                }
+            }
+            tbody {
+                tr td {
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+                    vertical-align: top;
+                }
+            }
+        }
+    }
+    &__item {
+        &_img {
+            width: 100px;
+            img {
+                border: 1px solid rgba(8, 23, 35, .08);
+                width: 108px;
+                height: auto;
+                display: block;
+                object-fit: contain;
+            }
+        }
+        &_detail {
+            padding-left: 40px;
+            &-title {
+                text-decoration: none;
+                color: #081723;
+                font-size: 15px;
+                font-weight: 700;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            &-price, &-descr {
+                margin-top: 6px;
+                font-size: 14px;
+                color: #081723BF;
+                font-family: "Assistant", sans-serif;
+                font-weight: 600;
+                line-height: 21px;
+            }
+        }
+        &_quantity {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            &-wrap {
+                display: flex;
+                height: 47px;
+                box-shadow: 0 0 0 1px rgba(8, 23, 35, .55);
+                max-width: 142px;
+            }
+            &-btn {
+                border: none;
+                background-color: #fff;
+                cursor: pointer;
+                min-width: 45px;
+                height: 100%;
+            }
+            &-input {
+                
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 120%;
+                    left: 50%;
+                    top: 50%;
+                    pointer-events: none;
+                    opacity: 0;
+                    transform: translate(-50%, -50%);
+                    border: 2px solid #081723BF;
+                }
+                &.active {
+                    &::after {
+                        opacity: .6;
+                        pointer-events: none;
+                    }
+                }
+                input {
+                    text-align: center;
+                    border: none;
+                    width: 100%;
+                    height: 100%;
+                    outline: none;
+                    &::-webkit-outer-spin-button,
+                    &::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+                }
+            }
+            &-remove {
+                svg path {
+                    transition: all .2s ease-in-out;
+                }
+                &:hover {
+                    svg path {
+                        fill: #ec5353;
+                    }
+                }
+            }
+        }
+        &_price {
+            text-align: right;
+            font-size: 16px;
+            color: #081723;
+            font-family: "Assistant", sans-serif;
+            font-weight: 600;
+            span {
+                text-align: right;
+                font-size: 16px;
+                color: #081723;
+                font-family: "Assistant", sans-serif;
+                font-weight: 600;
+            }
+        }
+    }
+}
