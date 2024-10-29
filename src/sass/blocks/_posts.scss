@@ -1,0 +1,78 @@
+.posts {
+    padding-bottom: 80px;
+    position: relative;
+    &__title {
+        font-size: 40px;
+        font-family: "Assistant", sans-serif;
+        line-height: 48px;
+        margin-bottom: 30px;
+    }
+    &__list {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+    &__item {
+        width: 100%;
+        height: auto;
+        position: relative;
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        &_img {
+            width: 100%;
+            position: relative;
+            img {
+                width: 100%;
+                object-fit: contain;
+                border: 3px solid #b3b3b3;
+                border-top-color: transparent;
+                border-bottom-color: transparent;
+                border-radius: 10px;
+                transition: .2s all ease-in-out;
+            }
+            // &:hover {
+            //     // border-color: transparent; 
+            //     transform: scale(1.01);
+            // }
+        }
+        &_wrap {
+            display: flex;
+            flex-direction: column;
+            padding: .5rem 1.5rem 1.6rem;
+        }
+        &_title {
+            font-family: "Assistant", sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            letter-spacing: 1.05px;
+        }
+        &_date {
+            font-size: 15px;
+            font-family: "Assistant", sans-serif;
+            font-weight: 400;
+            margin: .6rem 0;
+        }
+        &_descr {
+            font-size: 18px;
+            color: #525252;
+            font-family: "Assistant", sans-serif;
+            font-weight: 400;
+            line-height: 28px;
+        }
+        &:hover {
+            .posts__item_title {
+                text-decoration: underline;
+            }
+            .posts__item_img {
+                transform: scale(1.01);
+            }
+        }
+    }
+    &__btn {
+        background-color: rgb(17 53 89);
+        cursor: pointer;
+    }
+}
