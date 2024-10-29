@@ -56,6 +56,9 @@ h2:not(.left__title) {
 @import "./blocks/guarantee";
 @import "./blocks/business";
 @import "./blocks/posts";
+@import "./blocks/category";
+@import "./blocks/philosophy";
+@import "./blocks/story";
 
 @import "./media/cards";
 @import "./media/footer";
@@ -65,6 +68,9 @@ h2:not(.left__title) {
 @import "./media/feedbacks";
 @import "./media/guarantee";
 @import "./media/business";
+@import "./media/category";
+@import "./media/philosophy";
+@import "./media/story";
 
 @media(max-width: 1200px) {
     .container {
