@@ -53,6 +53,8 @@ h2:not(.left__title) {
 @import "./blocks/feedbacks";
 @import "./blocks/modal";
 @import "./blocks/cart";
+@import "./blocks/guarantee";
+@import "./blocks/business";
 
 @import "./media/cards";
 @import "./media/footer";
@@ -60,6 +62,8 @@ h2:not(.left__title) {
 @import "./media/prod";
 @import "./media/modal";
 @import "./media/feedbacks";
+@import "./media/guarantee";
+@import "./media/business";
 
 @media(max-width: 1200px) {
     .container {
