@@ -11,7 +11,137 @@
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body style="overflow-x: hidden !important;">
+    <header class="header">
+        <div class="burger">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="burger__icon" fill="none" viewBox="0 0 18 16">
+                <path d="M1 .5a.5.5 0 100 1h15.71a.5.5 0 000-1H1zM.5 8a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1A.5.5 0 01.5 8zm0 7a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1a.5.5 0 01-.5-.5z" fill="currentColor">
+                </path>
+            </svg>
 
+            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="burger__close" fill="none" viewBox="0 0 18 17">
+                <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
+                </path>
+            </svg>
+        </div>
+        <div class="header__title">
+            <a href="/" class="header__title-link">
+                <img src="./icons/logo_light.svg" alt="Vitamin Place" width="300" height="48.924731182795696" class="header__title-logo">
+            </a>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__menu-item">
+                    <div href="/" class="header__menu-submenu">
+                        <details class="header__megamenu">
+                            <summary class="header__megamenu-item">
+                                <span>Catalog</span>
+                                <svg aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 10 6">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
+                                        fill="currentColor">
+                                    </path>
+                                </svg>
+                            </summary>
+                            <div class="mega-menu">
+                                <ul class="mega-menu__list">
+                                    <li>
+                                        <a href="" class="mega-menu__link">Category</a>
+                                        <ul class="submega-menu__list">
+                                            <li>
+                                                <a href="/" class="submega-menu__link">Glyocogen Support Capsules</a>
+                                            </li>
+                                            <li>
+                                                <a href="/" class="submega-menu__link">Gut Cleanse Capsules</a>
+                                            </li>
+                                            <li>
+                                                <a href="/" class="submega-menu__link">Keto Gummies</a>
+                                            </li>
+                                            <li>
+                                                <a href="/" class="submega-menu__link">Keto Capsules</a>
+                                            </li>
+                                            <li>
+                                                <a href="/" class="submega-menu__link">Liquid Drops</a>
+                                            </li>
+                                            <li>
+                                                <a href="/" class="submega-menu__link">Probiotic Capsules</a>
+                                            </li>
+                                            <li>
+                                                <a href="/" class="submega-menu__link">Sports Nutrition</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="column-2">
+                                        <div class="mega-menu__catalogfull">
+                                            <a href="" class="mega-menu__catalogfull-link">
+                                                <img src="./img/all-prod-icon.webp" alt="All Products">
+                                                <span>Shop all products</span>
+                                                <span class="icon-wrap">&nbsp;
+                                                    <svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" class="my-arrow"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z"
+                                                            fill="currentColor">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+                    </div>
+                </li>
+                <li class="header__menu-item">
+                    <a href="/" class="header__menu-link">About Us</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="/" class="header__menu-link">Refund policy</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="/" class="header__menu-link">Terms of service</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="/" class="header__menu-link">Contacts</a>
+                </li>
+                <a class="header__menu-login">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon-account" fill="none" viewBox="0 0 18 19">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6 4.5a3 3 0 116 0 3 3 0 01-6 0zm3-4a4 4 0 100 8 4 4 0 000-8zm5.58 12.15c1.12.82 1.83 2.24 1.91 4.85H1.51c.08-2.6.79-4.03 1.9-4.85C4.66 11.75 6.5 11.5 9 11.5s4.35.26 5.58 1.15zM9 10.5c-2.5 0-4.65.24-6.17 1.35C1.27 12.98.5 14.93.5 18v.5h17V18c0-3.07-.77-5.02-2.33-6.15-1.52-1.1-3.67-1.35-6.17-1.35z" fill="currentColor">
+                        </path>
+                    </svg>
+                    <div href="/" class="header__menu-link">Log in</div>
+                </a>
+            </ul>
+        </nav>
+        <div class="header__btns">
+            <div class="header__btns-search">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.8107 18.9119L14.647 13.8308C15.9992 12.3616 16.8301 10.4187 16.8301 8.28068C16.8294 3.7071 13.0623 0 8.41496 0C3.76762 0 0.000488281 3.7071 0.000488281 8.28068C0.000488281 12.8543 3.76762 16.5614 8.41496 16.5614C10.4229 16.5614 12.2646 15.8668 13.7112 14.7122L18.8949 19.8134C19.1475 20.0622 19.5576 20.0622 19.8101 19.8134C19.8702 19.7547 19.918 19.6846 19.9506 19.6072C19.9832 19.5299 20 19.4467 20.0001 19.3628C20.0001 19.2788 19.9834 19.1957 19.9509 19.1182C19.9184 19.0408 19.8707 18.9707 19.8107 18.9119ZM8.41496 15.2873C4.4828 15.2873 1.29517 12.1504 1.29517 8.28068C1.29517 4.41101 4.4828 1.27403 8.41496 1.27403C12.3471 1.27403 15.5347 4.41101 15.5347 8.28068C15.5347 12.1504 12.3471 15.2873 8.41496 15.2873Z" fill="black"/>
+                </svg>
+            </div>
+            <a href="/" class="header__btns-account">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-account" fill="none"
+                    viewBox="0 0 18 19">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6 4.5a3 3 0 116 0 3 3 0 01-6 0zm3-4a4 4 0 100 8 4 4 0 000-8zm5.58 12.15c1.12.82 1.83 2.24 1.91 4.85H1.51c.08-2.6.79-4.03 1.9-4.85C4.66 11.75 6.5 11.5 9 11.5s4.35.26 5.58 1.15zM9 10.5c-2.5 0-4.65.24-6.17 1.35C1.27 12.98.5 14.93.5 18v.5h17V18c0-3.07-.77-5.02-2.33-6.15-1.52-1.1-3.67-1.35-6.17-1.35z"
+                        fill="black">
+                    </path>
+                </svg>
+            </a>
+            <a href="/" class="header__btns-cart">
+                <svg class="icon icon-cart" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 40 40" fill="none">
+                    <path fill="currentColor" fill-rule="evenodd"
+                        d="M20.5 6.5a4.75 4.75 0 00-4.75 4.75v.56h-3.16l-.77 11.6a5 5 0 004.99 5.34h7.38a5 5 0 004.99-5.33l-.77-11.6h-3.16v-.57A4.75 4.75 0 0020.5 6.5zm3.75 5.31v-.56a3.75 3.75 0 10-7.5 0v.56h7.5zm-7.5 1h7.5v.56a3.75 3.75 0 11-7.5 0v-.56zm-1 0v.56a4.75 4.75 0 109.5 0v-.56h2.22l.71 10.67a4 4 0 01-3.99 4.27h-7.38a4 4 0 01-4-4.27l.72-10.67h2.22z">
+                    </path>
+                </svg>
+                <div class="cart-count">
+                    <span>0</span>
+                </span>
+                </div>
+            </a>
+        </div>
+    </header>
     <section class="category">
         <div class="container">
             <div class="category__wrap">

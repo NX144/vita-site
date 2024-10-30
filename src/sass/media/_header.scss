@@ -171,3 +171,22 @@
         }
     }
 }
+
+@media(max-width: 425px) {
+    .header {
+        position: fixed;
+        margin: 0;
+        padding: 20px 30px;
+        top: 0;
+        z-index: 99;
+        &__nav {
+            width: 300px;
+        }
+    }
+    .swiper {
+        margin-top: 84px;
+    }
+    .prod, .category, .policy {
+        margin-top: 84px;
+    }
+}

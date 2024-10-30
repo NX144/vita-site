@@ -93,7 +93,12 @@ h2:not(.left__title) {
     }
 }
 @media(max-width: 991px) {
-    .feedbacks__reviews {
+    // .feedbacks__reviews {
 
-    }
+    // }
 }
+
+
+details summary { list-style-type: none !important; } /* Firefox */
+details summary::-webkit-details-marker { display: none !important; } /* Chrome */
+details summary::marker { display: none !important; }
