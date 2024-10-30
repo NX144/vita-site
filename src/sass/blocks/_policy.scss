@@ -1,0 +1,78 @@
+.policy {
+    padding: 26px 0 40px;
+    &__wrap {
+        max-width: 486px;
+        margin: 26px auto 0;
+        p {
+            margin: 16px 0;
+        }
+        p, span, a {
+            font-size: 16px;
+            font-family: "Assistant", sans-serif;
+            color: #081723BF;
+            font-weight: 600;
+            letter-spacing: 0.06rem;
+            line-height: 28px;
+        }
+        a {
+            color: #081723D9;
+            &:hover {
+                color: #081723;
+                text-decoration-thickness: 2px;
+            }
+        }
+        h2 {
+            text-align: left!important;
+        }
+        ul, ol {
+            margin: 16px 0;
+            padding: 0 0 0 20px;
+            font-size: 16px;
+            color: #081723BF;
+            font-family: "Assistant", sans-serif;
+            list-style-position: inside;
+            line-height: 29px;
+        }
+        strong, u, i {
+            font-family: "Assistant", sans-serif;
+        }
+        u, i {
+            font-weight: 600;
+        }
+        i {
+            font-style: italic
+        }
+        ul ul {
+            margin: 0;
+        }
+        h4 {
+            font-size: 24px;
+            color: #081723;
+            margin: 20px 0;
+        }
+        table {
+            border-collapse: collapse;
+            font-size: 14px;
+            border-style: hidden;
+            box-shadow: 0 0 0 1px rgba(8, 23, 35, .2);
+            th {
+                padding: 14px;
+                border: 1px solid rgba(8, 23, 35, .2);
+                strong {
+                    color: #081723BF;
+                    font-size: 14px;
+                    font-family: "Assistant", sans-serif;
+                }
+            }
+            td {
+                border: 1px solid rgba(8, 23, 35, .2);
+                padding: 14px 12px;
+                font-family: "Assistant", sans-serif;
+                font-size: 14px;
+                font-weight: 600;
+                color: #081723BF;
+                line-height: 1.8;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.story {
+    padding: 40px 0 52px;
+    &__wrap {
+        max-width: 773px;
+        margin: 0 auto;
+    }
+    &__descr {
+        text-align: center;
+        line-height: 39px;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: "Assistant", sans-serif;
+        color: #081723BF;
+        margin-top: 20px;
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto 0;
+        width: 132px;
+        height: 45px;
+        text-decoration: none;
+        background-color: #306cf2;
+        color: #fff;
+        box-shadow: 0 0 0 1px #306cf2;
+        font-weight: 700;
+        font-family: "Assistant", sans-serif;
+        font-size: 15px;
+        transition: all .1s ease-in-out;
+        border-radius: 7px;
+        &:hover {
+            box-shadow: 0 0 0 2px #306cf2;
+        }
+    }
+}

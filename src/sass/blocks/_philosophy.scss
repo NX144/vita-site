@@ -1,0 +1,42 @@
+.philosophy {
+    &__wrap {
+        padding: 36px 50px;
+    }
+    &__items {
+        margin-top: 30px;
+        list-style-type: none;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(auto-fill, minmax(347px, 1fr));
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &_img {
+            width: 180px;
+            height: 180px;
+            svg {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &_title {
+            padding: 25px 15px 0;
+            font-size: 18px;
+            font-weight: 700;
+            color: #081723;
+            text-align: center;
+        }
+        &_descr {
+            text-align: center;
+            font-family: "Assistant", sans-serif;
+            font-weight: 700;
+            padding: 20px 15px 25px;
+            font-size: 16px;
+            color: #081723BF;
+            line-height: 28px;
+        }
+    }
+}
