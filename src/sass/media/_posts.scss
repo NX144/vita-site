@@ -1,0 +1,16 @@
+@media(max-width: 991px) {
+    .posts {
+        &__list {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+@media(max-width: 768px) {
+    .posts {
+        &__list {
+            width: 85%;
+            margin: 0 auto;
+            grid-template-columns: 1fr;
+        }
+    }
+}

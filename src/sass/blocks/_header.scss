@@ -47,6 +47,9 @@
             text-decoration: none;
             color: #4d4d4d;
         }
+        &-login {
+            display: none;
+        }
     }
     &__megamenu {
         position: static;
@@ -209,4 +212,13 @@
 
 .column-2 {
     grid-column: span 2 / span 2;
+}
+
+
+.burger {
+    display: none;
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    cursor: pointer;
 }

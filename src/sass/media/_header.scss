@@ -1,0 +1,173 @@
+@media(max-width: 1800px) {
+    .header {
+        column-gap: 1rem;
+        margin-left: 60px;
+        margin-right: 60px;
+        max-width: 120rem;
+    }
+}
+
+@media(max-width: 1550px) {
+    .swiper {
+        height: 480px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .swiper {
+        height: unset;
+    }
+    .burger {
+        display: block;
+        &__close {
+            display: none;
+        }
+    }
+    .header {
+        .burger{
+            position: relative;
+            z-index: 9999;
+        }
+        &__title {
+            z-index: 9999;
+        }
+        &__nav {
+            position: fixed;
+            height: 100%;
+            width: 400px;
+            left: 0;
+            top: 0;
+            z-index: 999;
+            background-color: #fff;
+            // display: none;
+            left: -100%;
+            transition: .35s all ease-in-out;
+            align-items: start;
+            padding-top: 117px;
+        }
+        &__menu {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            &-item {
+                width: 100%;
+                position: relative;
+                display: block;
+                height: max-content;
+            }
+            &-link {
+                width: 100%;
+                padding: 1rem 2.8rem;
+                display: block;
+                height: max-content;
+                transition: .2s all ease-in-out;
+                &:hover {
+                    background: #f0ecec;
+                }
+            }
+            &-submenu {
+                width: 100%;
+                padding: 1rem 2.8rem;
+                height: max-content;
+                display: block;
+                cursor: pointer;
+                transition: .2s all ease-in-out;
+                &:hover {
+                    background: #f0ecec;
+                }
+            }
+            &-login {
+                display: flex;
+                width: 100%;
+                padding: 1rem 2.8rem;
+                cursor: pointer;
+                background: #f5f2f2;
+                transition: .2s all ease-in-out;
+                bottom: 0;
+                position: absolute;
+                .header__menu-link {
+                    padding: .5rem;
+                    &:hover {
+                        background: unset;
+                    }
+                }
+                svg {
+                    width: 26px;
+                }
+            }
+        }
+        &__megamenu {
+            &-item {
+                svg {
+                    transform: rotate(-90deg);
+                    right: 0.2rem;
+                }
+            }
+        }
+    }
+    .header__menu-active {
+        .mega-menu {
+            padding-right: 0;
+            padding-left: 0;
+            padding-top: 0;
+            top: 51px;
+            .column-2 {
+                display: none;
+            }
+            border-bottom: none;
+            border-top-color: #ece7e7;
+        }
+        .header__menu-login {
+            display: none;
+        }
+        .mega-menu__list {
+            grid-template-columns: 1fr;
+        }
+        .header__menu-submenu {
+            padding: 0;
+            &:hover {
+                background: unset;
+            }
+        }
+        .header__megamenu-item {
+            width: 100%;
+            padding: 1rem 2.8rem 1rem 3.5rem;
+            transition: .2s all ease-in-out;
+            &:hover {
+                background: #f0ecec;
+            }
+            svg {
+                left: 2.5rem;
+                transform: rotate(90deg);
+            }
+        }
+        .header__menu-item {
+            display: none;
+        }
+        .header__menu-item {
+            &:nth-child(1) {
+                display: block;
+            }
+        }
+        .mega-menu__list {
+            a {
+                width: 100%;
+                display: block;
+                padding: 1rem 0;
+                padding-left: 45px;
+                transition: .2s all ease-in-out;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: none;
+                    background: #f0ecec;
+                }
+            }
+            li {
+                margin: 0;
+            }
+        }
+        .mega-menu__link {
+            display: none !important;
+        }
+    }
+}
